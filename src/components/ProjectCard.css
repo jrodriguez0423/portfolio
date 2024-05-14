@@ -1,0 +1,26 @@
+.project-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+.project-card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.project-card-title {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #333333;
+}
+
+.project-card-description {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #666666;
+}

@@ -1,0 +1,38 @@
+html, body {
+    height: 100%;
+    margin: 0;  /* Make sure there are no margins on the body */
+}
+
+.navbar {
+    margin-bottom: 0;  /* Ensure there's no bottom margin */
+    padding: 10px 0; /* Adjust padding to match the height of your navbar if needed */
+    z-index: 1030; /* Standard z-index for Bootstrap fixed elements */
+}
+
+.hero {
+    padding-top: 70px; /* Adjust this value based on the actual height of your navbar */
+    height: calc(100vh - 55px); /* Adjust height to subtract the navbar height */
+    background-image: url('https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?q=80&w=2803&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+}
+
+.container {
+    height: inherit;
+}
+
+.navbar a {
+    color: white !important; /* Ensure navbar links are white */
+}
+
+.h1 {
+    text-align:left;
+    font-size:xx-large;
+}
+
+.p {
+    font-size: x-large;
+}

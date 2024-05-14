@@ -1,0 +1,129 @@
+.about-me-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333333;
+  }
+  
+  .section-subtitle {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+    color: #666666;
+  }
+  
+  .creators-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .creator-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 800px; /* Increased max-width to make the container wider */
+    width: 100%; /* Ensure the container takes the full available width */
+  }
+  
+  .creator-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .creator-name {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #333333;
+  }
+  
+  .creator-title {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  .creator-description {
+    font-size: 1rem;
+    color: #666666;
+    line-height: 1.5;
+  }
+  
+  .footer {
+    background: #333333; /* Dark background for the footer */
+    padding: 20px 0; /* Padding for the footer */
+    color: #ffffff; /* White text color */
+  }
+  
+  .footer .social-icon {
+    color: #ffffff; /* White color for social icons */
+    font-size: 1.5rem; /* Adjust the size of the icons */
+    margin: 0 15px; /* Space between icons */
+    transition: color 0.3s ease;
+  }
+  
+  .footer .social-icon:hover {
+    color: #0073b1; /* Change to the brand color on hover (LinkedIn color for example) */
+  }
+  
+  .footer .copyright-text {
+    color: #ffffff; /* White color for the copyright text */
+    margin-top: 15px; /* Space above the copyright text */
+    text-align: center; /* Center the copyright text */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .navbar-nav .nav-link {
+      font-size: 0.8rem; /* Adjust the font size for smaller screens */
+      padding: 0.4rem 0.8rem; /* Adjust the padding for smaller screens */
+    }
+  
+    .navbar-brand {
+      font-size: 1rem; /* Adjust the font size for smaller screens */
+    }
+  
+    .navbar-logo {
+      height: 45px; /* Adjust the height for smaller screens */
+    }
+  
+    .hero-text-container {
+      text-align: center; /* Center align text on smaller screens */
+    }
+  
+    .hero-greeting {
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+  
+    .introduction-heading {
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+  
+    .introduction-container {
+      padding: 0 20px; /* Add padding to the container on smaller screens */
+    }
+  
+    .introduction-box {
+      padding: 15px; /* Reduce padding inside the box for smaller screens */
+    }
+  
+    .footer .social-icon {
+      font-size: 1.2rem; /* Reduce the size of the icons for smaller screens */
+      margin: 0 10px; /* Adjust space between icons */
+    }
+  
+    .footer {
+      padding: 15px 0; /* Adjust padding for the footer on smaller screens */
+    }
+  }
+  
