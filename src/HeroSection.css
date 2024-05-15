@@ -1,19 +1,29 @@
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .hero {
-    text-align: left;
     background: #f0f0f0; /* Adjust the background as needed */
     padding: 50px 0; /* Add some padding to the hero section */
+    text-align: left; /* Center the text */
+}
+  
+.hero-text-container {
+  margin-right: auto;
+  margin-top: 15%;
   }
   
-  .hero-text-container {
-    text-align: left; /* Ensures both lines are left-aligned */
-  }
-  
-  .hero-greeting {
+.hero-greeting {
     margin: 0; /* Remove default margin for better control */
-    text-align: left; /* Ensure the text is left-aligned */
   }
   
-  .introduction-section {
+.introduction-section {
     position: relative; /* Ensure the pseudo-element is positioned correctly */
     height: 100vh; /* Make the section span the whole screen height */
     display: flex;
@@ -22,9 +32,9 @@
     padding: 60px 20px; /* Add padding to the introduction section */
     color: black; /* Ensure text is visible on the background */
     z-index: 1; /* Place the content above the pseudo-element */
-  }
+}
   
-  .introduction-section::before {
+.introduction-section::before {
     content: '';
     position: absolute;
     top: 0;
@@ -37,7 +47,7 @@
     z-index: -1; /* Place the pseudo-element behind the content */
     opacity: 0.7; /* Adjust the opacity to make the background image lighter */
     background-color: rgba(0, 0, 0, 0.3); /* Add a gray tint overlay */
-  }
+}
   
   .introduction-heading {
     text-align: center; /* Center the heading */
@@ -87,11 +97,32 @@
     margin-top: 15px; /* Space above the copyright text */
     text-align: center; /* Center the copyright text */
   }
+
+  .contact-button {
+    position: static;
+    display: inline-block;
+    margin-left: auto;
+    margin-bottom: auto;
+    padding: 10px 20px;
+    background-color: #007bff; /* Light blue color */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adding a slight shadow */
+    transition: background-color 0.3s ease;
+    animation: slideInFromRight 1s ease-out; /* Apply the animation */
+  }
+  
+  .contact-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
   
   /* Responsive styles */
   @media (max-width: 768px) {
     .hero-text-container {
-      text-align: center; /* Center align text on smaller screens */
+      text-align:left; /* Center align text on smaller screens */
     }
   
     .hero-greeting {
