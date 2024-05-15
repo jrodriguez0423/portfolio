@@ -3,43 +3,66 @@
     padding: 60px 0;
     margin-top: 60px;
     height: 100vh;
-}
-
-.section-title {
+  }
+  
+  .section-title {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 10px;
     color: #333333;
-}
-
-.contact-form {
+  }
+  
+  .contact-me-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.form-label {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+    max-height: 450px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Slightly moved down */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Smooth transition */
+  }
+  
+  .contact-me-container.fade-in {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-label {
     font-size: 1rem;
     margin-bottom: 10px;
     color: #333333;
     width: 100%;
     max-width: 400px;
-}
-
-.form-input, .form-textarea {
+    text-align: left; /* Align labels to the left */
+  }
+  
+  .form-input, .form-textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
-
-.form-textarea {
+  }
+  
+  .form-textarea {
     height: 100px;
     resize: vertical;
-}
-
-.form-button {
+  }
+  
+  .form-button {
     background-color: #007bff;
     color: white;
     border: none;
@@ -47,8 +70,77 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
-}
-
-.form-button:hover {
+  }
+  
+  .form-button:hover {
     background-color: #0056b3;
-}
+  }
+  
+  .footer {
+    background: #333333; /* Dark background for the footer */
+    padding: 20px 0; /* Padding for the footer */
+    color: #ffffff; /* White text color */
+  }
+  
+  .footer .social-icon {
+    color: #ffffff; /* White color for social icons */
+    font-size: 1.5rem; /* Adjust the size of the icons */
+    margin: 0 15px; /* Space between icons */
+    transition: color 0.3s ease;
+  }
+  
+  .footer .social-icon:hover {
+    color: #0073b1; /* Change to the brand color on hover (LinkedIn color for example) */
+  }
+  
+  .footer .copyright-text {
+    color: #ffffff; /* White color for the copyright text */
+    margin-top: 15px; /* Space above the copyright text */
+    text-align: center; /* Center the copyright text */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .navbar-nav .nav-link {
+      font-size: 0.8rem; /* Adjust the font size for smaller screens */
+      padding: 0.4rem 0.8rem; /* Adjust the padding for smaller screens */
+    }
+  
+    .navbar-brand {
+      font-size: 1rem; /* Adjust the font size for smaller screens */
+    }
+  
+    .navbar-logo {
+      height: 45px; /* Adjust the height for smaller screens */
+    }
+  
+    .hero-text-container {
+      text-align: center; /* Center align text on smaller screens */
+    }
+  
+    .hero-greeting {
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+  
+    .introduction-heading {
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+  
+    .introduction-container {
+      padding: 0 20px; /* Add padding to the container on smaller screens */
+    }
+  
+    .introduction-box {
+      padding: 15px; /* Reduce padding inside the box for smaller screens */
+    }
+  
+    .footer .social-icon {
+      font-size: 1.2rem; /* Reduce the size of the icons for smaller screens */
+      margin: 0 10px; /* Adjust space between icons */
+    }
+  
+    .footer {
+      padding: 15px 0; /* Adjust padding for the footer on smaller screens */
+    }
+  }
+  

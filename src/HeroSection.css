@@ -101,6 +101,7 @@
   .contact-button {
     position: static;
     display: inline-block;
+    margin-top: 365px;
     margin-left: auto;
     margin-bottom: auto;
     padding: 10px 20px;
