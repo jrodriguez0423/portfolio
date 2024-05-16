@@ -86,10 +86,10 @@ const Projects = () => {
     <div>
       <Navbar />
       <section className="projects-section">
-        <div className="container scrollable-container">
-          <h2 className="section-title">
+      <h2 className="section-title">
             <TypingAnimation text="My Projects" speed={100} />
           </h2>
+        <div className="container scrollable-container">
           <div className="projects-container">
             {projects.map((project, index) => (
               <div className="project-card" key={index}>

@@ -1,11 +1,12 @@
 .projects-section {
-  margin-top: 40px;
+  margin-top: 60px;
+  padding-top: 60px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #f8f9fa;
   color: black; /* Adjust text color for better visibility against the background */
-  height: 92vh; /* Make the section span the whole screen height */
+  height: 110vh; /* Make the section span the whole screen height */
 }
 
 .fixed-title {
@@ -25,10 +26,11 @@
   font-size: 2.5rem;
   margin-bottom: 10px;
   color: #333333;
+  padding-top: 60px;
+
 }
 
 .scrollable-container {
-  padding-top: 80px; /* Make space for the fixed title */
   max-height: 80vh; /* Adjust this value as needed */
   overflow-y: auto;
 }
