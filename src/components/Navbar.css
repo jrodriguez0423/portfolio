@@ -31,18 +31,26 @@
 /* Adjust the navbar-toggler button */
 .navbar-toggler {
   border: none;
+  background: none; /* Remove any background */
+  outline: none; /* Remove the outline */
+}
+
+.navbar-toggler:focus {
+  outline: none; /* Remove the outline on focus */
 }
 
 .navbar-toggler-icon {
-  background-color: rgba(255, 255, 255, 0.5); /* Background color for the burger menu */
+  background-color: transparent; /* Ensure no background color */
   border-radius: 5px; /* Optional: Add some border radius */
 }
 
-.navbar-collapse {
-  background-color: #333333; /* Background color for the collapsed menu */
+/* Ensure no gray outline or background on active state */
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  box-shadow: none; /* Remove any box-shadow */
+  background-color: transparent; /* Ensure no background color */
 }
 
-/* Responsive styles */
+/* Media query to remove gray outline and background in mobile view */
 @media (max-width: 768px) {
   .navbar-nav .nav-link {
     font-size: 0.8rem; /* Adjust the font size for smaller screens */
